@@ -26,8 +26,8 @@ This Repository is a simple Currency Converter written i Python!</br>
 
 #Preqesite
 
-You need to have Python installed (obviously :)) if you want to build it from the source code it self otherwise you could just use the .exe file to runn it.</br>
-
+You need to have Python installed (obviously :)) if you want to build it from the source code it self otherwise you could just use the .exe file to run it.</br>
+You can find the currency-converter.exe file in dist folder.<br>
 
 
 WANT TO KNOW MORE ABOUT ME? [FOLLOW THE LINK](https://the-r4v3n.github.io/github.io/#)  
