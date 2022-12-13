@@ -1,6 +1,6 @@
 #
 # @file currency-converter.py
-# @author Oliver Joisten (https://the-r4v3n.github.io/github.io/#)
+# @author Oliver Joisten (o.joisten@live.se)
 # @brief A simple Currency Converter
 # @version 0.1
 # @date 2022-10-10
@@ -51,10 +51,10 @@ class App(tk.Tk):
         self.intro_label.config(font=('lato black', 17, 'bold'))
 
         self.date_label = Label(
-            self, text=f"1 Swedish Crown equals = {self.currency_converter.convert('SEK','USD',1)} USD \n Date : {self.currency_converter.data['date']}", relief=tk.GROOVE, borderwidth=5)
+            self, text=f"1 USD = {self.currency_converter.convert('USD','SEK',1)} SEK \n Date : {self.currency_converter.data['date']}", relief=tk.GROOVE, borderwidth=5)
 
-        self.intro_label.place(x=10, y=5)
-        self.date_label.place(x=160, y=50)
+        self.intro_label.place(x=15, y=5)
+        self.date_label.place(x=190, y=50)
 
         # Entry box
         valid = (self.register(self.restrictNumberOnly), '%d', '%P')
@@ -65,9 +65,9 @@ class App(tk.Tk):
 
         # dropdown
         self.from_currency_variable = StringVar(self)
-        self.from_currency_variable.set("SEK")  # default value
+        self.from_currency_variable.set("USD")  # default value
         self.to_currency_variable = StringVar(self)
-        self.to_currency_variable.set("USD")  # default value
+        self.to_currency_variable.set("SEK")  # default value
 
         font = ("lato black", 12, "bold")
         self.option_add('*TCombobox*Listbox.font', font)
@@ -78,14 +78,13 @@ class App(tk.Tk):
 
         # placing
         self.from_currency_dropdown.place(x=30, y=120)
-        self.amount_field.place(x=36, y=150)
+        self.amount_field.place(x=30, y=150)
         self.to_currency_dropdown.place(x=340, y=120)
-        # self.converted_amount_field.place(x = 346, y = 150)
-        self.converted_amount_field_label.place(x=346, y=150)
+        self.converted_amount_field_label.place(x=341, y=150)
 
         # Convert button
         self.convert_button = Button(
-            self, text="Convert", fg="blue", command=self.perform)
+            self, text="Convert", fg="green", command=self.perform)
         self.convert_button.config(font=('lato black', 15, 'bold'))
         self.convert_button.place(x=200, y=115)
 
