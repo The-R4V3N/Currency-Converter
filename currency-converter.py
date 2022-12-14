@@ -1,6 +1,6 @@
 #
 # @file currency-converter.py
-# @author Oliver Joisten (o.joisten@live.se)
+# @author The-R4V3N (https://the-r4v3n.github.io/github.io/#)
 # @brief A simple Currency Converter
 # @version 0.1
 # @date 2022-10-10
